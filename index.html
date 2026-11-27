@@ -13,7 +13,9 @@
 <link href="https://fonts.googleapis.com/css2?family=Chewy&family=Poppins:wght@600;800&display=swap" rel="stylesheet">
 <style>
   *{box-sizing:border-box;margin:0;padding:0}
-  html,body{width:300px;height:600px;overflow:hidden;background:#00ad5e}
+  /* fondo blanco y anuncio centrado en pantalla; dentro de un iframe de 300x600 queda exacto, sin desplazamiento */
+  html{width:100%;height:100%;display:flex;background:#fff}
+  body{width:300px;height:600px;margin:auto;overflow:hidden;background:#00ad5e;flex:none}
   #ad{position:relative;width:300px;height:600px;overflow:hidden;font-family:Poppins,"Arial Rounded MT Bold",Arial,sans-serif;
       background:radial-gradient(circle at 50% 38%,#009a53 0%,#009a53 55%,#009a53 100%);
       -webkit-user-select:none;user-select:none;-webkit-tap-highlight-color:transparent;touch-action:none}
